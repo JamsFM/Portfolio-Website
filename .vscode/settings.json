@@ -1,0 +1,24 @@
+{
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontSize": 16,
+    "markdown.preview.lineHeight": 1.4,
+    "terminal.integrated.mouseWheelZoom": true,
+    "editor.mouseWheelZoom": true,
+    "quokka.fontSize": 14,
+    "markdown.preview.fontSize": 16,
+    "chat.editor.fontSize": 16,
+    "prettier.bracketSameLine": true,
+    "prettier.experimentalTernaries": true,
+    "rainbowTags.colors": [
+        "#ccb22f",
+        "#8f0ac4",
+        "#4a9e16",
+        "#e35bac"
+    ],
+    "rainbowTags.allowEverywhere": true,
+    "editor.foldingImportsByDefault": true,
+    "editor.showFoldingControls": "always",
+    "a-file-icon-vscode.arrowTheme": "plusMinus"
+}
