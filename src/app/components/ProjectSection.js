@@ -99,31 +99,32 @@ const ProjectSection = () => {
         id="projects" 
         className="px-4 py-24 sm:px-6 lg:px-8">
         
-        <h2 className="text-3xl font-bold text-primary-400 mb-10 text-center">
+        <h2 className="text-3xl font-bold text-secondary-400 mb-10 text-center">
             ~ Featured Projects ~</h2>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
             {projects.map((project) => (
                 <button
                     onClick={() => handleOpenModal(project.id)} 
                     key={project.id} 
-                    className="bg-gray-800/40 backdrop-blur-sm rounded-lg gap-6 border border-gray-700/70 hover:border-primary-500/50 transition-colors hover:shadow-sm text-left">
+                    className="bg-gray-800/40 backdrop-blur-sm rounded-lg gap-6 border border-gray-700/70 hover:border-secondary-500/50 transition-colors hover:shadow-sm text-left">
                     <div className="flex flex-col h-full">
-                        <h3 className="text-lg font-medium text-primary-300 ml-2 mr-2 mb-2">
+                        <h3 className="text-lg font-medium text-secondary-300 ml-2 mr-2 mb-2">
                             {project.title}</h3>
                         <p className="text-gray-300 ml-3 mr-3 mb-4">
                             {project.description}</p>
                         <div className="flex flex-wrap gap-1.5 ml-2 mr-2 mt-auto">
                             {project.techStack.map((tech) => (
                                 <span key={tech} 
-                                    className="px-2 py-0.5 text-xs rounded-full bg-primary-500/20 text-primary-200 border border-primary-500/30">
+                                    className="px-2 py-0.5 text-xs rounded-full bg-secondary-500/20 text-secondary-200 border border-secondary-500/30">
                                     {tech}</span>
                             ))}
                         </div>
                         <div className="flex mt-4 justify-center">
-                            <a 
-                            href={project.link} 
-                            className="inline-block px-3 py-.75 bg-primary text-white rounded-md hover:bg-primary-500/50 hover:text-primary-200 text-center">
-                                View Project</a>
+                            <a  target="_blank" 
+                                rel="noopener noreferrer" 
+                                href={project.link} 
+                                className="inline-block px-3 py-.75 mb-1.5 bg-secondary text-white rounded-md hover:bg-secondary-500/50 hover:text-secondary-200 text-center">
+                                    View Project</a>
                         </div>
                     </div>
                 </button>

@@ -11,7 +11,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: var(--color-teal-700);
+   /* Primary */
   --color-primary-50: var(--color-teal-50);
   --color-primary-100: var(--color-teal-100);
   --color-primary-200: var(--color-teal-200);
@@ -19,7 +19,28 @@
   --color-primary-400: var(--color-teal-400);
   --color-primary-500: var(--color-teal-500);
   --color-primary-600: var(--color-teal-600);
-  --color-secondary: var(--color-indigo-500);
+  --color-primary: var(--color-teal-700);
+   /* Secondary */
+  --color-secondary-50: var(--color-fuchsia-50);
+  --color-secondary-100: var(--color-fuchsia-100);
+  --color-secondary-200: var(--color-fuchsia-200);
+  --color-secondary-300: var(--color-fuchsia-300);
+  --color-secondary-400: var(--color-fuchsia-400);
+  --color-secondary-500: var(--color-fuchsia-500);
+  --color-secondary-600: var(--color-fuchsia-600);
+  --color-secondary: var(--color-fuchsia-700);
+   /* Secondary */
+  --color-tertiary-50: var(--color-indigo-50);
+  --color-tertiary-100: var(--color-indigo-100);
+  --color-tertiary-200: var(--color-indigo-200);
+  --color-tertiary-300: var(--color-indigo-300);
+  --color-tertiary-400: var(--color-indigo-400);
+  --color-tertiary-500: var(--color-indigo-500);
+  --color-tertiary-600: var(--color-indigo-600);
+  --color-tertiary: var(--color-indigo-700);
+   /* Placeholders */
+  --color-quaternary: var(--color-indigo-700);
+  --color-quinary: var(--color-indigo-700);
 }
 
 @media (prefers-color-scheme: dark) {

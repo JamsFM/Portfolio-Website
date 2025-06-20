@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PropTypes from 'prop-types';
+// import Favicon from "react-favicon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,11 +17,14 @@ export const metadata = {
   title: "Portfolio",
   description: "Personal Portfolio as a Software Development Engineer",
   icons: {
-    icon: "../favicon.ico"
+    icon: "/_next/static/media/metadata/Initials.svg"
   }
 };
 
 export default function RootLayout({ children }) {
+  RootLayout.propTypes = {
+      children: PropTypes.any
+  }
   return (
     <html lang="en">
       <body
