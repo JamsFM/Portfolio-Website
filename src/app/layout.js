@@ -1,7 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head'
+// import Footer from './components/Footer';
+// import Navbar from './components/Navbar';
 import PropTypes from 'prop-types';
 // import Favicon from "react-favicon";
+
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
@@ -30,34 +35,16 @@ export default function RootLayout({ children }) {
   }
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Next.js</title>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-slate-50`}
       >
-        {children}
-        <SpeedInsights
-          // url="https://jamesfmare.com"
-          // url="https://portfolio-website-jamesfmare.vercel.app/"
-          // url="http://localhost:3000/"
-          /* url="https://portfolio-website-jamesfmare.vercel.app/"
-          token={process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_TOKEN}
-          className="fixed bottom-0 right-0 p-4 bg-gray-800/50 backdrop-blur-md rounded-lg shadow-lg z-50"
-          style={{ width: '300px', height: '200px' }}
-          options={{
-            lighthouse: {
-              performance: true,
-              accessibility: true,
-              bestPractices: true,
-              seo: true,
-              pwa: false,
-            },
-            insights: {
-              performance: true,
-              accessibility: true,
-              bestPractices: true,
-              seo: true,
-            },
-          }} */
-        />  
+        <main>{children}</main>
+        <Analytics />  
+        <SpeedInsights />  
       </body>
     </html>
   );
