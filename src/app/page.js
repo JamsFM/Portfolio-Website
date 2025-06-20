@@ -39,10 +39,10 @@ export default function Home() {
         // url="https://jamesfmare.com"
         // url="https://portfolio-website-jamesfmare.vercel.app/"
         // url="http://localhost:3000/"
-        url="https://portfolio-website-jamesfmare.vercel.app/"
+        /* url="https://portfolio-website-jamesfmare.vercel.app/"
         token={process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_TOKEN}
         className="fixed bottom-0 right-0 p-4 bg-gray-800/50 backdrop-blur-md rounded-lg shadow-lg z-50"
-        // style={{ width: '300px', height: '200px' }}
+        style={{ width: '300px', height: '200px' }}
         options={{
           lighthouse: {
             performance: true,
@@ -57,7 +57,7 @@ export default function Home() {
             bestPractices: true,
             seo: true,
           },
-        }}
+        }} */
       />  
     </div>
   );
