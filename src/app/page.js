@@ -1,4 +1,5 @@
 import ProjectSection from "./components/ProjectSection";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() { 
   return (
@@ -34,5 +35,30 @@ export default function Home() {
         </div>
       </div>
       <ProjectSection />
-    </div>  );
+      <SpeedInsights
+        // url="https://jamesfmare.com"
+        // url="https://portfolio-website-jamesfmare.vercel.app/"
+        // url="http://localhost:3000/"
+        url="https://portfolio-website-jamesfmare.vercel.app/"
+        token={process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_TOKEN}
+        className="fixed bottom-0 right-0 p-4 bg-gray-800/50 backdrop-blur-md rounded-lg shadow-lg z-50"
+        // style={{ width: '300px', height: '200px' }}
+        options={{
+          lighthouse: {
+            performance: true,
+            accessibility: true,
+            bestPractices: true,
+            seo: true,
+            pwa: false,
+          },
+          insights: {
+            performance: true,
+            accessibility: true,
+            bestPractices: true,
+            seo: true,
+          },
+        }}
+      />  
+    </div>
+  );
 }
