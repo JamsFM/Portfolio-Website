@@ -42,12 +42,12 @@ const ProjectSection = () => {
       },
       {
         id: "5",
-        title: "Embedded Systems Project",
-        techStack: ["C", "Assembly", "RTOS", "IoT", "Microcontroller", "Product Demo"],
+        title: "FPGA | Programmable Processor",
+        techStack: ["FPGA", "Assembly", "Verilog", "Logic Design", "Altera Board", "Product Demo", "Project Management"],
         image: "/images/project-e.png",
-        description: "Embedded Systems Development Class Project to program a microcontroller to gain hands-on experience with IoT.",
-        fullDescription: "A Embedded Systems Development class project that involved programming a TM4C123GH6PM microcontroller to control various hardware components to gain hands-on experience with IoT. The project included designing and implementing firmware for the microcontroller. Communicated with embedded processor using Bluetooth, performed analog & digital conversion, and used system timers and interrupts. Worked with pre-constructed real-time Operation System. Designed a fitness device that tracks steps, temperature, sound, and light.",
-        link: "#"
+        description: "Simulated the behavior of a Programmable Processor using Logic Design and Verilog for a Class Project.",
+        fullDescription: "Lead group project to implement the simulated behavior of an ALU within a made from scratch Programmable Processor using Logic Design on an Altera board with Verilog. In completion of the project with my team I filmed the video demonstration.",
+        link: "https://www.youtube.com/watch?v=tkFUi1VNvrs"
       },
       {
         id: "6",
@@ -55,8 +55,17 @@ const ProjectSection = () => {
         techStack: ["VHDL", "Logic Design", "Altera Board", "Product Demo", "Project Management"],
         image: "/images/project-f.gif",
         description: "Simulated the Tail-Lights of the classic Ford Thunderbird using a FPGA for a Class Project using Logic Design and VHDL.",
-        fullDescription: "Lead group project to implement the simulated behavior of the Ford Thunderbird Tail Lights using Logic Design on an Altera board with VHDL. In completion of the project with my team I filmed the video demonstration",
+        fullDescription: "Lead group project to implement the simulated behavior of the Ford Thunderbird Tail Lights using Logic Design on an Altera board with VHDL. In completion of the project with my team I filmed the video demonstration.",
         link: "https://www.youtube.com/watch?v=1eroVlh89mE"
+      },
+      {
+        id: "7",
+        title: "Embedded Systems Project",
+        techStack: ["C", "Assembly", "RTOS", "IoT", "Microcontroller", "Bluetooth", "Analog & Digital Conversion", "Timers & Interrupts"],
+        image: "/images/project-g.png",
+        description: "Embedded Systems Development Class Project to program a microcontroller to gain hands-on experience with IoT.",
+        fullDescription: "A Embedded Systems Development class project that involved programming a TM4C123GH6PM microcontroller to control various hardware components to gain hands-on experience with IoT. The project included designing and implementing firmware for the microcontroller. Communicated with embedded processor using Bluetooth, performed analog & digital conversion, and used system timers and interrupts. Worked with pre-constructed real-time Operation System. Designed a fitness device that tracks steps, temperature, sound, and light.",
+        link: "#https://www.ti.com/tool/EK-TM4C123GXL#description"
       }
     ];
 

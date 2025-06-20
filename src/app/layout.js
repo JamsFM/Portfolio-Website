@@ -17,7 +17,9 @@ export const metadata = {
   title: "Portfolio",
   description: "Personal Portfolio as a Software Development Engineer",
   icons: {
-    icon: "/_next/static/media/metadata/Initials.svg"
+    icon: "/favicon.ico",
+    // icon: "/public/favicon/favicon.svg",
+    // icon: "/_next/static/media/metadata/favicon.svg"
   }
 };
 
