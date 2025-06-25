@@ -20,5 +20,8 @@
     "rainbowTags.allowEverywhere": true,
     "editor.foldingImportsByDefault": true,
     "editor.showFoldingControls": "always",
-    "a-file-icon-vscode.arrowTheme": "plusMinus"
+    "a-file-icon-vscode.arrowTheme": "plusMinus",
+    "cSpell.words": [
+        "athropolgist"
+    ]
 }

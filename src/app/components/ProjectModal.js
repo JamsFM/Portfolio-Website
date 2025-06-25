@@ -7,10 +7,10 @@ export default function ProjectModal({ project, onClose, onNext, onPrev }) {
     const modalRef = useRef();
 
     ProjectModal.propTypes = {
-        project: PropTypes.any,
-        onClose: PropTypes.any,
-        onNext: PropTypes.any,
-        onPrev: PropTypes.any
+        project: PropTypes.number,
+        onClose: PropTypes.number,
+        onNext: PropTypes.number,
+        onPrev: PropTypes.number
     }
 
     const handleClickOutside = (e) => {

@@ -1,4 +1,6 @@
 import ProjectSection from "./components/ProjectSection";
+import ContactSection from "./components/ContactSection";
+import AboutSection from "./components/AboutSection";
 
 export default function Home() { 
   return (
@@ -27,10 +29,12 @@ export default function Home() {
           I am a growing Software Developer with an Engineers Intuition and Education, fueled with a Passion to be a part of the Innovative!
         </p>
         <div className="flex mt-8 gap-6">
-          <button className="px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary-500/50 hover:text-primary-200 text-xl">
-            About Me</button>
-          <button className="px-6 py-3 rounded-lg border border-gray-700 bg-gray-800/40 text-primary-500 font-medium hover:border-primary hover:bg-gray-200/20 hover:text-primary-400/80 transition-colors text-xl">
-            Contact Me</button>
+          <div>
+            <AboutSection />
+          </div>
+          <div>
+            <ContactSection />
+          </div>
         </div>
       </div>
       <ProjectSection />

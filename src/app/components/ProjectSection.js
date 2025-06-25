@@ -23,18 +23,9 @@ const ProjectSection = () => {
         link: "https://github.com/JamsFM/Portfolio-Website"
       },
       {
-        id: "3",
-        title: "Cover-Letter Template Filler",
-        techStack: ["Python", "Scripting", "LibreOffice", "WSL2", "Technical Doc", "GitHub"],
-        image: "/images/project-c.jpg",
-        description: "Cover-Letter Template filling application that fills data fields with given or default values using LibreOffice.",
-        fullDescription: "A simple application that fills in a cover-letter template with user-provided or default information using LibreOffice within a WSL.",
-        link: "https://github.com/JamsFM/CoverLetterTemplateFiller"
-      },
-      {
         id: "4",
         title: "POC Healthcare DB",
-        techStack: ["SQL Server", "C#", "Dapper", "Product Demo", "GitHub"],
+        techStack: ["SQL Server", "C#", "Dapper", "DB Design", "DB Management", "Product Demo", "GitHub"],
         image: "/images/project-d.jpg",
         description: "A Proof Of Concept small-scale Healthcare Database made for a Databases Class Project.",
         fullDescription: "A Proof Of Concept (POC) Small-scale Healthcare Database project created for a class assignment. The project involved designing a database schema, implementing CRUD operations, and creating a user-friendly interface for managing healthcare records.",
@@ -67,7 +58,17 @@ const ProjectSection = () => {
         fullDescription: "A Embedded Systems Development class project that involved programming a TM4C123GH6PM microcontroller to control various hardware components to gain hands-on experience with IoT. The project included designing and implementing firmware for the microcontroller. Communicated with embedded processor using Bluetooth, performed analog & digital conversion, and used system timers and interrupts. Worked with pre-constructed real-time Operation System. Designed a fitness device that tracks steps, temperature, sound, and light.",
         link: "#https://www.ti.com/tool/EK-TM4C123GXL#description"
       }
-    ];
+      /*,
+      {
+        id: "3",
+        title: "Cover-Letter Template Filler",
+        techStack: ["Python", "Scripting", "LibreOffice", "WSL2", "Technical Doc", "GitHub"],
+        image: "/images/project-c.jpg",
+        description: "Cover-Letter Template filling application that fills data fields with given or default values using LibreOffice.",
+        fullDescription: "A simple application that fills in a cover-letter template with user-provided or default information using LibreOffice within a WSL.",
+        link: "https://github.com/JamsFM/CoverLetterTemplateFiller"
+      }*/
+    ]; 
 
     const [selectedProject, setSelectedProject] = useState(null);
     
@@ -110,7 +111,7 @@ const ProjectSection = () => {
         
         <h2 className="text-3xl font-bold text-secondary-400 mb-10 text-center">
             ~ Featured Projects ~</h2>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {projects.map((project) => (
                 <button
                     onClick={() => handleOpenModal(project.id)} 

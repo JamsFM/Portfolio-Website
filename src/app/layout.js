@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head'
+// import Head from 'next/head'
+import Navbar from './components/Header';
 // import Footer from './components/Footer';
-// import Navbar from './components/Navbar';
 import PropTypes from 'prop-types';
 // import Favicon from "react-favicon";
 
@@ -35,14 +35,15 @@ export default function RootLayout({ children }) {
   }
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <title>Next.js</title>
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-slate-50`}
       >
-        <main>{children}</main>
+        <main>
+          <Navbar />
+          <div className="mt-4 md:mt-18 container mx-auto p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+            {children}
+          </div>
+        </main>
         <Analytics />  
         <SpeedInsights />  
       </body>
