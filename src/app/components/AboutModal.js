@@ -58,8 +58,7 @@ export default function AboutModal({ onClose }) {
                                 🦾 Committed to delivering robust, secure, and efficient solutions that align with business goals and enhance user experiences.</li>
                         </ol>
                         <p className="text-gray-300 mt-8 font-semibold">
-                            🔭 I am currently looking for new opportunities in Software Development Engineering, DevOps, or Full-Stack Development<br/><br/>
-                            🤝 Reach out and I would love to provide my Resume and talk more!
+                            🔭 I am currently looking for new opportunities in Software Development Engineering, DevOps, or Full-Stack Development
                         </p>
 
                         <hr className="w-[99%] h-1 mx-auto my-4 md:my-10 border-0 rounded-sm bg-gray-700" />
