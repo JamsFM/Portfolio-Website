@@ -37,13 +37,13 @@ const Navbar = () => {
                     Projects
                 </Link>
               </li>
-              {/* <li key="blog">
+              <li key="blog">
                 <Link 
                   href="#blog" 
                   className="px-2 py-1 rounded-lg text-tertiary-300 hover:bg-tertiary-500/25 hover:text-tertiary-200  hover:underline hover:decoration-tertiary-200 decoration-gray-600 font-semibold">
                     Blog
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
