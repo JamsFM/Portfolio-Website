@@ -58,7 +58,8 @@ export default function AboutModal({ onClose }) {
                                 🦾 Committed to delivering robust, secure, and efficient solutions that align with business goals and enhance user experiences.</li>
                         </ol>
                         <p className="text-gray-300 mt-8 font-semibold">
-                            🔭 I am currently looking for new opportunities in Software Development Engineering, DevOps, or Full-Stack Development
+                            🔭 I am currently looking for new opportunities in Software Development Engineering, DevOps, or Full-Stack Development<br/><br/>
+                            🤝 Reach out and I would love to provide my Resume and talk more!
                         </p>
 
                         <hr className="w-[99%] h-1 mx-auto my-4 md:my-10 border-0 rounded-sm bg-gray-700" />
@@ -70,15 +71,20 @@ export default function AboutModal({ onClose }) {
                         </p>
                         <ol className="list-none list-inside text-gray-300 ml-4">
                             <li className="mb-4">
-                                🥾 I love exploring the outdoors— whether it&#39;s hiking scenic trails, personally I&#39;m a fan of trail running and rucking, camping under the stars, or simply enjoying a walk in nature to recharge and find inspiration. In all honesty, I&#39;m an unassuming nature/health nut on top of that. I love climbing outside or indoors, I go to the gym, and I work out at home, and I do all that to be a multi-disciplinary fitness nerd who can talk even a trainer&#39;s ear off about diet, technique, and sports science.</li>
+                                🥾 I&#39;m happiest when I&#39;m outdoors, whether I&#39;m hiking a scenic trail, pushing myself with some trail running or rucking, or simply camping under a starry sky. Nature is my go-to for recharging and finding inspiration. Beyond that, I&#39;m a self-proclaimed fitness nut who loves to climb (both indoors and out), hit the gym, and even work out at home. I&#39;m always learning and happy to geek out about diet, technique, and sports science— I can talk a trainer&#39;s ear off!
+                            </li>
                             <li className="mb-4">
-                                🎺 Music is a big part of my life. While I don&#39;t play my trumpet anymore, I enjoy listening to a wide variety of genres, and try to keep an eye out for when my favorite bands are touring. I&#39;m definitely someone who jams out often which helps me unwind and and lets me think.</li>
+                                🎺 For me, music is more than just sound— it&#39;s a vital part of my daily rhythm. While my trumpet sits retired, I actively seek out and enjoy listening to a vast array of genres, and I&#39;m always hoping to catch my favorite artists live. It&#39;s how I decompress, process thoughts, and find my focus.
+                            </li>
                             <li className="mb-4">
-                                📚 I&#39;m an avid reader, and while I rarely pick up a book recreationally anymore, I&#39;m always looking to learn something new in articles— be it technology trends for personal development and curiosity, or just keeping up with physics/science news and just striving to absorb &#34;a little something about everything&#34;. I&#39;m always satisfying my hunger for knowledge by read or watching something. As you can tell, &#34;Nerd&#34; is a title I humbly think was always fitting</li>
+                                📚 I&#39;m an avid consumer of knowledge, always on the hunt for something new to learn. Though I don&#39;t often pick up recreational books, I devour articles on everything from emerging technology trends for professional & personal development to cutting-edge physics and science news. My goal is to absorb &#39;a little something about everything,&#39; constantly feeding my curiosity through reading and watching. If &#39;Nerd&#39; means a passion for learning, then I humbly accept the title!
+                            </li>
                             <li className="mb-4">
-                                🍳 I enjoy experimenting in the kitchen, trying out new recipes, and sharing good food with friends and family. I love to cook, and I have my mother to thank for that. There&#39;s no shame in being great at the simple stuff- I make a delicious, albeit overly fancy, spaghetti, and I&#39;ve occasionally succeeded in making my overly complicated chocolate chip cookies.</li>
+                                🍳 I love to cook—a passion I inherited from my mother. I enjoy experimenting with new recipes and, most of all, sharing good food with friends and family. While I appreciate the simple things, like my delicious (albeit a bit fancy) spaghetti, I also enjoy a challenge, occasionally conquering an overly complicated recipe from a culture I&#39;m not as familiar with.If I&#39;m playing it safe, though, then I know I can always impress with my brown butter chocolate chip cookie recipe.
+                            </li>
                             <li className="mb-4">
-                                🌍 I love traveling and experiencing different cultures, which broadens my perspective and fuels my curiosity. Being biracial helped me gain familiarity with Mexico, but I would say I&#39;ve always strived to have a more worldly perspective and have always found it to be second nature to see the world from how someone else shares their experience to be. Having an open mind that is consistently respectful is the core virtue of any anthropologist who wants to learn another culture respectfully, and I see it as my ethical duty to be curious respectfully. Culture is all around us and shapes us down to influencing what we think, wear, how we talk, and even what music we listen to. Knowing where someone comes from and how they see the world helps you connect, and we are social creatures who will eventually strike up great conversations.</li>
+                                🌍 I&#39;m driven by a deep curiosity about different cultures, which continually broadens my perspective and allows me to truly connect with people. My biracial background offered an early window into Mexico, but I&#39;ve always naturally sought a global worldview, understanding experiences through others&#39; eyes. I believe respectful curiosity is key to engaging with diverse cultures, fostering the kind of deeper connections and meaningful conversations I truly value.
+                            </li>
                         </ol>
                     </div>
                 </div>

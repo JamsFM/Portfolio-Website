@@ -16,7 +16,7 @@ const ProjectSection = () => {
       {
         id: "2",
         title: "Portfolio Website",
-        techStack: ["React", "Tailwind CSS", "Technical Doc", "GitHub", "Proxmox", "Linux VM", "Docker"],
+        techStack: ["React", "Tailwind CSS", "Technical Doc", "GitHub"/*, "Proxmox", "Linux VM", "Docker"*/],
         image: "/images/project-b.jpg",
         description: "Portfolio Website for self marketing and growing skills with Front-End Web Development.",
         fullDescription: "Personal portfolio website to showcase my skills, projects, and experience. Built with React and Tailwind CSS for a modern and responsive design. Features include a project showcase, blog section, and an about me page.",
