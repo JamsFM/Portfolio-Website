@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Head from 'next/head'
 import Navbar from './components/Header';
 // import Footer from './components/Footer';
 import PropTypes from 'prop-types';
@@ -40,7 +39,7 @@ export default function RootLayout({ children }) {
       >
         <main>
           <Navbar />
-          <div className="mt-4 md:mt-18 container mx-auto p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+          <div className="sm:mt-4 md:mt-10 container mx-auto p-4 sm:p-10 font-[family-name:var(--font-geist-sans)]">
             {children}
           </div>
         </main>

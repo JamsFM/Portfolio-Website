@@ -1,5 +1,4 @@
 import Link from "next/link";
-// import ContactSection from "./ContactSection";
 
 const Navbar = () => {
   return (
