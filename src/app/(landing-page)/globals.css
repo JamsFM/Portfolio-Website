@@ -7,10 +7,14 @@
 }
 
 @theme inline {
+   /* Backgrounds */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  
+   /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+   /* Colors  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
    /* Primary */
   --color-primary-50: var(--color-teal-50);
   --color-primary-100: var(--color-teal-100);
@@ -54,4 +58,89 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .payload-richtext ul { 
+    @apply list-disc list-inside;
+  }
+
+  .payload-richtext ol { 
+    @apply list-decimal list-inside;
+  }
+
+  .payload-richtext a { 
+    @apply text-primary-500 hover:text-primary-600;
+  }
+
+  // Headings
+  .payload-richtext h1 {
+    @apply text-4xl leading-tight font-bold mt-8 mb-6 scroll-mt-[100px];
+  }
+
+  .payload-richtext h2 {
+    @apply text-3xl leading-tight font-semibold mt-8 mb-5 scroll-mt-[100px];
+  }
+
+  .payload-richtext h3 {
+    @apply text-2xl leading-snug font-semibold mt-7 mb-4 scroll-mt-[100px];
+  }
+
+  .payload-richtext h4 {
+    @apply text-xl leading-snug font-semibold mt-6 mb-4 scroll-mt-[100px];
+  }
+
+  .payload-richtext h5 {
+    @apply text-lg leading-normal font-semibold mt-5 mb-3 scroll-mt-[100px];
+  }
+
+  .payload-richtext h6 {
+    @apply text-base leading-normal font-semibold mt-4 mb-3 scroll-mt-[100px];
+  }
+}
+
+.pattern-bg {
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  width: calc(100% + 12rem);
+  right: -4rem;
+  bottom: -4rem;
+  z-index: -1;
+
+  background-color: #101828;
+  opacity: 0.6;
+  background-image:  linear-gradient(30deg, #432dd7 12%, transparent 12.5%, transparent 87%, #432dd7 87.5%, #432dd7), linear-gradient(150deg, #432dd7 12%, transparent 12.5%, transparent 87%, #432dd7 87.5%, #432dd7), linear-gradient(30deg, #432dd7 12%, transparent 12.5%, transparent 87%, #432dd7 87.5%, #432dd7), linear-gradient(150deg, #432dd7 12%, transparent 12.5%, transparent 87%, #432dd7 87.5%, #432dd7), linear-gradient(60deg, #432dd777 25%, transparent 25.5%, transparent 75%, #432dd777 75%, #432dd777), linear-gradient(60deg, #432dd777 25%, transparent 25.5%, transparent 75%, #432dd777 75%, #432dd777);
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.pattern-bg-alt {
+  position: absolute;
+  top: -6rem;
+  left: -6rem;
+  width: calc(100% + 12rem);
+  right: -6rem;
+  bottom: -6rem;
+  z-index: -1;
+
+  opacity: 0.3;
+  background-image:  linear-gradient(#9696ff 3.3000000000000003px, transparent
+    3.3000000000000003px), linear-gradient(to right, #9696ff 3.3000000000000003px, transparent 3.3000000000000003px);
+  background-size: 66px 66px;
+  @media (max-width: 768px) {
+    width: calc(100% + 4rem);
+    height: calc(100% + 4rem);
+    top: -3rem;
+    left: -3rem;
+    right: -3rem;
+    bottom: -3rem;
+    background-size: 11px 11px;
+  }
+}
+
+.default-fade {
+  -webkit-mask: radial-gradient(ellipse 30% 20% at center, rgb(15 23 42) 0%,   transparent 70%);
+  mask: radial-gradient(ellipse 60% 50% at center, rgb(15 23 42) 0%, transparent 70%);
+  opacity: 0.3;
 }

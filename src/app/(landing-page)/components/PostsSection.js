@@ -6,16 +6,19 @@ const PostsSection = async () => {
         collection: 'posts',
         limit: 2,
         sort: '-createdAt',
+        where: {
+            includedInBlog: {
+                equals: true,
+            }
+        }
     });
 
     console.log(posts);
 
     return (
-        <section>
-            <h2>Latest Posts <br/>
-                from the Blog
-            </h2>
-        </section>
+        <h2>Latest Posts <br/>
+            from the Blog
+        </h2>
     );
 }
 
