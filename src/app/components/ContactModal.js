@@ -1,8 +1,5 @@
 "use client";
 import { X } from 'lucide-react';
-// import { X,  Copy } from 'lucide-react';
-// https://www.geeksforgeeks.org/reactjs/how-to-copy-text-to-the-clipboard-in-next-js/
-// import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
 export default function ContactModal({ onClose }) {
@@ -10,8 +7,6 @@ export default function ContactModal({ onClose }) {
     ContactModal.propTypes = {
         onClose: PropTypes.bool
     }
-
-    // const router = useRouter();
 
     const handleClickOutside = (e) => {
         e.preventDefault();
