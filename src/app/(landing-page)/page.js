@@ -1,6 +1,7 @@
 import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
 import AboutSection from "./components/AboutSection";
+import PostsSection from "./components/PostsSection";
 
 export default function Home() { 
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         </div>
         <ProjectSection />
       </div>
+      <PostsSection />
     </div>
   );
 }
