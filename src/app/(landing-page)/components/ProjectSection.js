@@ -7,7 +7,7 @@ const ProjectSection = () => {
       {
         id: "1",
         title: "Boeing Log Analysis",
-        techStack: ["Python", "ML", "Bad-actor Simulation", "SDLC", "Agile Methods", "Technical Doc", "Product Demo", "GitHub", "Linux VM"],
+        techStack: ["Python", "ML", "Bad-actor Sim", "SDLC", "Agile Methods", "Technical Doc", "Product Demo", "GitHub", "Linux VM"],
         image: "/images/project-a.png",
         description: "Senior Capstone Project with Boeing to analyze logs for cyber-attack indictors using Machine Learning.",
         fullDescription: "▪ Developed Machine Learning models to identify anomalous logs potentially indicating cyber-attacks. \n▪ Backend: Utilized RegEx, Bag-of-Words, and TF-IDF (sklearn) to parse and categorize log data. \n▪ Frontend: Designed a GUI using Tkinter for data visualization and user interaction. \n▪ Implemented Logistic Regression and K-Means clustering for anomaly detection. \n▪ Simulated DDoS attack scenarios, creating shell and batch files for automated attack simulations. \n▪ Contributed to the Technical Documentation (Road Map, Design Spec, Validation/Test Plan, PRD, and more). \n▪ Created & Lead the Presentation/Demo for both an Academic audience and to a small board from Boeing to showcase the results of the project.",
