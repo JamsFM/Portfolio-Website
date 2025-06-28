@@ -14,7 +14,7 @@ const Navbar = () => {
                 width={50}
                 height={50}
                 priority={true}
-                quality={70}
+                quality={75}
             />
             <Link 
               href="/" 
