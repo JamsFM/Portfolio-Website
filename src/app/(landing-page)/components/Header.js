@@ -1,19 +1,31 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="bg-gray-900/70 backdrop-blur-md fixed top-0 left-0 w-full z-50">
-      <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-70">
-        <div className="flex container items-center justify-between mx-auto py-2 lg:px-8 lg:py-4 ip-8 sm:p-10 md:p-6">
-          <Link 
-            href="/" 
-            className="px-2 py-1 rounded-lg text-tertiary-400 hover:bg-tertiary-500/15 hover:text-tertiary-200 hover:underline hover:decoration-tertiary-200 decoration-gray-600 decoration-double text-2xl md:text-4xl font-semibold">
-                Portfolio
-          </Link>
+    <header className="bg-gray-900/70 backdrop-blur-md fixed w-screen z-50">
+      <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-gray-900 bg-opacity-70">
+        <div className="flex container items-center justify-between w-screen mx-auto px-2 lg:px-4 py-2 sm:py-2">
+          <div className="relative flex gap-2 lg:gap-4 z-60">
+            <Image
+                className="italic"
+                src="/favicon.png"
+                alt="JFM"
+                width={50}
+                height={50}
+                priority={true}
+                quality={70}
+            />
+            <Link 
+              href="/" 
+              className="px-2 py-1 rounded-lg text-tertiary-400 hover:bg-tertiary-500/15 hover:text-tertiary-200 hover:underline hover:decoration-tertiary-200 decoration-gray-600 decoration-double text-2xl md:text-4xl font-semibold">
+                  Portfolio
+            </Link>
+          </div>
           <div 
-            className="menu hidden md:block md:w-auto"
+            className="menu hidden md:block md:w-auto justify-end mr-2"
             id="navbar">
-            <ul className="flex p-4 md:p-0 md:flex-row md:space-x-4 mt-0">
+            <ul className="flex px-2 py-2 sm:px-4 lg:px-8 flex-row space-x-2 md:space-x-4">
               <li 
                 key="about">
                     <Link 

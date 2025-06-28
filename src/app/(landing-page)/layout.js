@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       >
         <main>
           <Navbar />
-          <div className="mt-6 sm:mt-4 md:mt-10 container mx-auto p-4 sm:p-10 font-[family-name:var(--font-geist-sans)]">
+          <div className="pt-8 sm:pt-10 lg:pt-12 container mx-auto px-4 sm:px-10 font-[family-name:var(--font-geist-sans)]">
             {children}
           </div>
           <Footer />
