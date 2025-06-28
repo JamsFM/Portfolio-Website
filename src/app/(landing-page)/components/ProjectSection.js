@@ -107,9 +107,9 @@ const ProjectSection = () => {
   return (
     <section 
         id="projects" 
-        className="px-4 py-24 sm:px-6 lg:px-8">
+        className="px-4 py-12 sm:py-24 sm:px-6 lg:px-8">
         
-        <h2 className="text-3xl font-bold text-secondary-400 mb-10 text-center">
+        <h2 className="text-xl sm:text-3xl font-bold text-secondary-400 mb-4 sm:mb-10 text-center">
             ~ Featured Projects ~</h2>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {projects.map((project) => (
@@ -120,9 +120,9 @@ const ProjectSection = () => {
                     <div className="flex flex-col h-full">
                         <h3 className="text-lg font-medium text-secondary-300 ml-2 mr-2 mb-2">
                             {project.title}</h3>
-                        <p className="text-gray-300 ml-3 mr-3 mb-4">
+                        <p className="text-gray-300 mx-3 mb-4">
                             {project.description}</p>
-                        <div className="flex flex-wrap gap-1.5 ml-2 mr-2 mt-auto">
+                        <div className="flex flex-wrap gap-1.5 mx-2 mt-auto">
                             {project.techStack.map((tech) => (
                                 <span key={tech} 
                                     className="px-2 py-0.5 text-xs rounded-full bg-secondary-500/20 text-secondary-200 border border-secondary-500/30">

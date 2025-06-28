@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div>
             <button
                 onClick={() => handleOpenModal()} 
-                className="text-nowrap backdrop-blur-sm px-6 py-3 rounded-lg gap-6 border bg-primary text-white font-medium  hover:bg-primary-500/50 hover:text-primary-200 transition-colors text-xl">
+                className="text-nowrap backdrop-blur-sm  px-3 sm:px-6  py-1.5 sm:py-3 rounded-lg gap-6 border bg-primary text-white font-medium  hover:bg-primary-500/50 hover:text-primary-200 transition-colors text-md sm:text-xl">
                     About Me</button>
         </div>
         {

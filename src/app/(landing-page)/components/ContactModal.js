@@ -15,17 +15,17 @@ export default function ContactModal({ onClose }) {
 
     return (
         <div 
-            className="fixed inset-0 bg-gray-800 bg-opacity-70 flex items-center justify-center z-50" 
+            className="fixed inset-0 bg-gray-800 bg-opacity-70 grid w-screen h-screen place-items-center items-center justify-center z-50" 
             onClick={handleClickOutside}>
             <div  
-                className="bg-gray-900 rounded-lg max-w-4xl w-11/12 max-h-[60vh] overflow-y-auto p-12 h-10/12" 
+                className="bg-gray-900 rounded-lg max-w-90 sm:max-w-xl md:max-w-4xl w-11/12 max-h-[90vh] overflow-y-auto p-2 md:p-8 h-screen" 
                 onClick={(e) => e.stopPropagation()}>
                 <div className="flex justify-between mb-0">
                     <h2 className="text-2xl font-bold text-primary-300 underline decoration-gray-600 decoration-double">
                         Contact Details</h2>
                     <button 
                         onClick={onClose} 
-                        className="text-primary-50 hover:text-primary-400 rounded-full p-2 bg-gray-800/50 hover:bg-gray-800/70 transition-colors translate-x-[100%] -translate-y-[100%]">
+                        className="text-secondary-50 hover:text-secondary-400 rounded-full p-2 bg-gray-800/50 hover:bg-gray-800/70 transition-colors translate-x-[5%] -translate-y-[5%] md:translate-x-[100%] md:-translate-y-[100%]">
                             <X size={24} />
                     </button>
                 </div>
